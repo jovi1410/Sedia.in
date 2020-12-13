@@ -4,7 +4,12 @@
 <div class="row mb-4">
   <h4 class="col">Daftar Makanan</h4>
   <!-- <div class="col align-self-end"> -->
-  <a href="{{ route('menu.create')}}" class="btn btn-primary col-auto align-self-end" type="button" name="button">Tambah Menu</a>
+  <a href="{{ route('menu.create')}}" class="btn btn-primary btn-icon-split" type="button" name="button">
+      <span class="icon text-white-50">
+          <i class="fas fa-plus"></i>
+      </span>
+      <span class="text">Tambah Menu</span>
+  </a>
 <!-- </div> -->
 </div>
 <div class="card-deck">
@@ -25,7 +30,6 @@
 <div class="row mb-4">
   <h4 class="col">Daftar Minuman</h4>
   <!-- <div class="col align-self-end"> -->
-  <a href="{{ route('menu.create')}}" class="btn btn-primary col-auto align-self-end" type="button" name="button">Tambah Menu</a>
 <!-- </div> -->
 </div>
 <div class="card-deck">

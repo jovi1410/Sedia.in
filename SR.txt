@@ -1,0 +1,14 @@
+ OFFLINE CHECKOUT (owner)
+ - nama pembeli
+ - tanggal pembelian/transaksi
+ - modal status transaksi (AJAX)
+ - data offline checkout masuk tabel transaksi (MySQL)
+
+ TABEL PESANAN
+- id_pesanan
+- no_meja
+- id_menu
+- jumlah
+- nama_pembeli
+- metode_pemesanan
+- timestamp

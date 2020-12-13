@@ -22,11 +22,11 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <label for="alamat">harga:</label>
+                    <label for="alamat">harga:(Rp.)</label>
                     <input type="number" class="form-control" id="harga" name="harga"></input>
                 </div>
                 <div class="form-group">
-                    <label for="alamat">stok:</label>
+                    <label for="alamat">stok:(/porsi)</label>
                     <input type="number" class="form-control" id="stok" name="stok"></input>
                 </div>
                 <div class="input-group">
@@ -37,7 +37,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+                    <a type="reset" href="/daftar-menu"class="btn btn-md btn-danger">Cancel</a>
                 </div>
             </form>
         </div>

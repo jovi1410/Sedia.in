@@ -48,41 +48,34 @@
                     <span>Dashboard</span></a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link" href="/profile_customer">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <span>Profile</span>
+                </a>
+            </li>
+
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <!-- Heading -->
             <div class="sidebar-heading">
-                Warung
+                pemesanan
             </div>
 
             <!-- Nav Item - Pages Collapse Menu -->
             <li class="nav-item">
-                <a class="nav-link" href="/data_warung"
+                <a class="nav-link" href="/pesan_menu"
                     aria-expanded="true" aria-controls="collapseTwo">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Data Akun Pemilik Warung</span>
+                    <i class="fa fa-glass" aria-hidden="true"></i>
+                    <span>Pesan Menu</span>
                 </a>
             </li>
 
             <!-- Nav Item - Utilities Collapse Menu -->
             <!-- Divider -->
             <hr class="sidebar-divider">
-
-            <!-- Heading -->
-            <div class="sidebar-heading">
-                Customer
-            </div>
-
-            <!-- Nav Item - Pages Collapse Menu -->
-            <li class="nav-item">
-                <a class="nav-link collapsed" href="/data_customer"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="fas fa-fw fa-table"></i>
-                    <span>Data Customer</span>
-                </a>
-            </li>
-        </ul>
+          </ul>
         <!-- End of Sidebar -->
 
         <!-- Content Wrapper -->
@@ -125,7 +118,7 @@
 
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
-                  @yield('contentAdmin')
+                  @yield('contentCustomer')
 
                 </div>
                 <!-- /.container-fluid -->

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Menu;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
+use App\Warung as warung;
 
 class MenuController extends Controller
 {
@@ -16,10 +17,12 @@ class MenuController extends Controller
      */
     public function index()
     {
-        $idWarung = Auth::id();
-        $makanan = Menu::where('id_warung', $idWarung)->where('jenis_menu', 'makanan')->get();
-        // return($makanan);
-        $minuman = Menu::where('id_warung', $idWarung)->where('jenis_menu', 'minuman')->get();
+        $idPemilik = Auth::id();
+        $idWarung = warung::where('user_id', $idPemilik)->pluck('id_warung')->first();
+
+        $makanan = Menu::where('id_warung', $idWarung)->where('jenis_menu', 'makanan')->where('isDelete', 0)->get();
+        $minuman = Menu::where('id_warung', $idWarung)->where('jenis_menu', 'minuman')->where('isDelete', 0)->get();
+
         return view('layoutWarung.daftarmenu',compact('makanan','minuman'));
     }
 
@@ -120,7 +123,8 @@ class MenuController extends Controller
     {
 
         $data_menu = Menu::find($id);
-        $data_menu->delete();
+        $data_menu->isDelete = 1;
+        $data_menu->update();
         return redirect('/menu');
     }
 }

@@ -5,7 +5,7 @@
         <!-- Add Your Content Inside -->
         <div class="content">
             <!-- Remove This Before You Start -->
-            <h1>Tambah Menu</h1>
+            <h1>Edit Menu</h1>
             <hr>
             <form action="/menu/{{$data_menu->id}}/update" method="post" enctype="multipart/form-data">
             <!-- <form action="{{ url('/tambahMenuBaru') }}" method="post"> -->
@@ -37,7 +37,7 @@
                 </div>
                 <div class="form-group">
                     <button type="submit" class="btn btn-md btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+                    <button type="reset" href="/daftar-menu" class="btn btn-md btn-danger">Cancel</button>
                 </div>
             </form>
         </div>

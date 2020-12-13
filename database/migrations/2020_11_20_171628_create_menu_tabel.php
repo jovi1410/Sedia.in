@@ -14,7 +14,7 @@ class CreateMenuTabel extends Migration
     public function up()
     {
         Schema::create('menu_tabel', function (Blueprint $table) {
-            $table->bigIncrements('id_menu');
+            $table->bigIncrements('id');
             $table->integer('id_warung');
             $table->string('nama_menu');
             $table->string('jenis_menu');
